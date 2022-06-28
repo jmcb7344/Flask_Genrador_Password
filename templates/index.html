@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Generador de Password</title>
+    
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h2>Generate Password</h2>
+      <div>
+        <textarea id="PasswordResult" rows="1" disabled>{{ password }}</textarea>
+      </div>
+      <form class="select">
+        <div>
+          <label for="passwordlength" class="label">Password</label>
+          <select name="length" id="passwordlength" class="input">
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+              <option value="13">13</option>
+              <option value="14">14</option>
+              <option value="15">15</option>
+          </select>
+        </div>
+        <div>
+          <label for="uppercase" class="label"
+            >Include uppercase letteres
+          </label>
+          <input
+            type="checkbox"
+            name="uppercase"
+            id="uppercase"
+            class="input"
+          />
+        </div>
+        <div>
+          <label for="lowercase" class="label"
+            >Include lowercase letteres
+          </label>
+          <input
+            type="checkbox"
+            name="lowercase"
+            id="lowercase"
+            class="input"
+          />
+        </div>
+        <div>
+          <label for="simbol" class="label">Include simbol</label>
+          <input type="checkbox" name="simbol" id="simbol" class="input" />
+        </div>
+        <div class="button">
+          <button type="submit" class="btn">Generate</button>
+        </div>
+      </form>
+      <div class="p">
+        <p>Juan Castro - 2022</p>
+      </div>
+    </main>
+  </body>
+</html>
